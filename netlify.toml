@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  functions = "functions"  # Location for the serverless functions
+  publish = "public"       # Folder containing your frontend files
+
+[[redirects]]
+  from = "/socket.io/*"
+  to = "/.netlify/functions/socket-server/socket.io/:splat"
+  status = 200
+  force = true
