@@ -1,6 +1,6 @@
 # netlify.toml
 [build]
-  functions = "functions"  # Location for the serverless functions
+  functions = "netlify/functions"  # Location for the serverless functions
   publish = "public"       # Folder containing your frontend files
 
 [[redirects]]
